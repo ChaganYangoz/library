@@ -16,41 +16,43 @@
         <div>Library</div>
         <button type="button" class="btn btn-info btn-md" id="myBtn">Add a book</button>
     </div>
-
-    <div class="container">
-
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Add a Book</h4>
-                    </div>
-                    <div class="modal-body">
-                        <input type="text" name="title" id="" placeholder="Title">
-                        <input type="text" name="" id="" placeholder="Author">
-                        <input type="number" placeholder="Page">
-                        <div id="box">
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add new book</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" name="title" id="title" placeholder="Title" required>
+                    <input type="text" name="" id="author" placeholder="Author" required>
+                    <input type="number" id="page" placeholder="Page" required>
+                    <div id="box">
                         <div>Have you read it?</div>
-                        <input type="checkbox" name="" id="">
-                    </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-info btn-md" >Submit</button>
+                        <input type="checkbox" name="" id="readit">
                     </div>
                 </div>
-
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info btn-md" data-dismiss="modal"
+                        id="formSubmit">Submit</button>
+                </div>
             </div>
-        </div>
 
-        <script>
-            $(document).ready(function () {
-                $("#myBtn").click(function () {
-                    $("#myModal").modal({ backdrop: true });
-                });
+        </div>
+    </div>
+
+    <div id="library">
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#myBtn").click(function () {
+                $("#myModal").modal({ backdrop: true });
             });
-        </script>
+        });
+    </script>
 </body>
 <script src="script.js"></script>
 

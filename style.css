@@ -35,3 +35,13 @@ body{
   gap: 5px;
   justify-content: center;
 }
+
+.modal-title{
+  display: flex;
+  justify-content: center;
+}
+
+#library{
+  display: grid;
+  gap: 50px;
+}
