@@ -13,7 +13,7 @@
 
 <body>
     <div class="header">
-        <div>Library</div>
+        <div id="lib-title">Library</div>
         <button type="button" class="btn btn-info btn-md" id="myBtn">Add a book</button>
     </div>
     <div class="modal fade" id="myModal" role="dialog">
@@ -23,19 +23,18 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Add new book</h4>
                 </div>
-                <div class="modal-body">
-                    <input type="text" name="title" id="title" placeholder="Title" required>
-                    <input type="text" name="" id="author" placeholder="Author" required>
-                    <input type="number" id="page" placeholder="Page" required>
-                    <div id="box">
-                        <div>Have you read it?</div>
-                        <input type="checkbox" name="" id="readit">
-                    </div>
-                </div>
+                <form onsubmit="return false;" class="modal-body" id="form1">
+                        <input type="text" name="title" id="title" placeholder="Title" required>
+                        <input type="text" name="" id="author" placeholder="Author" required>
+                        <input type="number" id="page" placeholder="Page" required>
+                        <div id="box">
+                            <div>Have you read it?</div>
+                            <input type="checkbox" name="" id="readit">
+                        </div>
+                </form>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-info btn-md" data-dismiss="modal"
-                        id="formSubmit">Submit</button>
+                    <button form="form1" type="submit" class="btn btn-info btn-md" id="formSubmit">Submit</button>
                 </div>
             </div>
 

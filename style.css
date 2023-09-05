@@ -22,6 +22,7 @@ body{
   margin-bottom: 150px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .modal-body{
@@ -42,6 +43,39 @@ body{
 }
 
 #library{
-  display: grid;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
   gap: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#lib-title{
+  font-size: 50px;
+}
+
+#myBtn{
+  width: 100px;
+  height: 35px;
+  background-color: cadetblue;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  font-size: 20px;
+  border: 1px solid black;
+  
+}
+
+input{
+  padding: 5px;
+}
+
+#myModal{
+  margin-top: 100px;
 }
