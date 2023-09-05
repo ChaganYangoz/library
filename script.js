@@ -45,7 +45,7 @@ const library=document.querySelector("#library");
 
 function displayBooks(book){
         const container=document.createElement("div");
-        container.classList.add("container");
+        container.classList.add("frame");
 
         const divTitle=document.createElement("div");
         divTitle.textContent='"'+book.title+'"';
