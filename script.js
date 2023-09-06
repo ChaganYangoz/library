@@ -99,9 +99,9 @@ function displayBooks(book){
 function isRead(control,element){
     if(control){
         element.textContent="Read";
-        element.style.background="green";
+        element.style.background="#96C291";
     }else{
         element.textContent="Not Read";
-        element.style.background="red";
+        element.style.background="#FF6969";
     }
 }
